@@ -1,0 +1,56 @@
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #f5f5f5;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+  
+  canvas{
+    display:none;
+  }
+  
+  h1{
+    font-weight:300;
+    color:#1dc291;
+  }
+  
+  #translatedText{
+    font-size: 5vh;
+  }
+  
+.btn{
+  background-color: #b3e5fc;
+  color: white;
+}
+
+.btn:hover{
+  background-color:#1dc291;
+}
+
+#textcol{
+  -webkit-box-shadow: inset 0px 0px 40px -18px rgba(0,0,0,0.54);
+  -moz-box-shadow: inset 0px 0px 40px -18px rgba(0,0,0,0.54);
+  box-shadow: inset 0px 0px 40px -18px rgba(0,0,0,0.54);
+  background:#E5E5E5;
+}
+
+.redoverlay{
+  background-color:rgba(255, 0, 0, 0.55);
+}
+
+.greenoverlay{
+  background-color:rgba(0, 255, 0, 0.55);
+}
+
+.footer-copyright{
+  color:#004d40 !important;
+}
+
+.brand-logo{
+  font-weight: 300;
+  font-size: 2.8rem!important;
+}

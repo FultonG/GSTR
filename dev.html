@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+ <html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>Developmental</title>
+     <meta name="description" content="DESCRIPTION">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="theme-color" content="#B3E5FC">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <script src="webcam.js"></script>
+
+     <!--[if lt IE 9]>
+       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+ </head>
+
+ <body> 
+  <nav class="light-blue lighten-4">
+   <div class="container">
+    <div class="nav-wrapper">
+       <a class="brand-logo">Gstr</h4>
+       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/">Disability</a></li>
+        <li><a href="/educational">Educational</a></li>
+        <li class="active"><a href="#">Developmental</a></li>
+        <li><a href="/logout">Logout</a></li>
+      </ul>
+            <ul class="side-nav" id="mobile-demo">
+        <li></li><a href="/">Disability</a></li>
+        <li><a href="/educational">Educational</a></li>
+        <li class="active"><a href="#">Developmental</a></li>
+        <li><a href="/logout">Logout</a></li>
+      </ul>
+
+    </div>
+    </div>
+  </nav>
+        <main>
+       <div class="container">
+       <div class="row">
+        <div class="col s12">
+        <h1 class="center-align">Developmental</h1>
+        </div>
+       </div>
+       <div class="row">
+           <div class="col s6" id="vidcol">
+               <video autoplay="true" id="videoElement" class="responsive-video">
+               </video>
+               
+           </div>
+           <div class="col s6" id="textcol" style="text-align: center;">
+               <canvas></canvas>
+           </div>
+       </div>
+         <div class="row">
+         <form id="updatemodel">
+          <div class="input-field col l4 m12 s12" name="caca" style="margin-top:0">
+            <select name="yas">
+              <option value="" disabled selected>Improve On:</option>
+              <option value="trainE">E</option>
+              <option value="trainH">H</option>
+              <option value="trainL">L</option>
+              <option value="trainO">O</option>
+            </select>
+          </div>
+          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+          </button>
+         </form>
+         
+         <!--<button type="button" id="Speak" class="waves-effect waves-light btn">Speak</button>-->
+         <!--<button type="button" id="clear" class="waves-effect waves-light btn">Clear</button>-->
+        </div>
+   </div>
+   </main>
+           <footer class="page-footer  light-blue lighten-4">
+          <div class="container">
+            <div class="row">
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2016 Copyright VandyHacks Dream Team
+            <a class="teal-text text-darken-4 right" href="https://www.youtube.com/watch?v=mIVwasDgqzM">Promo Vid</a>
+            </div>
+          </div>
+        </footer>
+            
+   <script type="text/javascript" src="https://sdk.clarifai.com/js/clarifai-2.0.14.js"></script>
+<script>
+  var app = new Clarifai.App(
+    'PteynGvFPCcZlopijaRtUOX7I7FKyxtu7DvrFpFo',
+    'VahVy96QIe0ts0BvbbNRn3_a4VkkLOwMiJdlv6ne'
+  );
+  
+</script>
+   
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.js"></script>
+<script src="script.js"></script>
+ </body>
+
+ </html>
+ 
+ 

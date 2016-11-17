@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+ <html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>Home</title>
+     <meta name="description" content="DESCRIPTION">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="theme-color" content="#B3E5FC">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+     <script src="webcam.js"></script>
+
+     <!--[if lt IE 9]>
+       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+ </head>
+
+ <body> 
+ 
+  <nav class="light-blue lighten-4">
+   <div class="container">
+    <div class="nav-wrapper">
+       <a class="brand-logo">Gstr</h4>
+       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li class="active"><a href="#">Disability</a></li>
+        <li><a href="educational">Educational</a></li>
+        <li><a id="developerslink">Developmental</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li class="active"><a href="#">Disability</a></li>
+        <li><a href="educational.html">Educational</a></li>
+        <li><a href="developers.html">Developmental</a></li>
+      </ul>
+
+    </div>
+    </div>
+  </nav>
+        <main>
+       <div class="container">
+       <div class="row">
+        <div class="col s12">
+        <h1 class="center-align">Disability</h1>
+        </div>
+       </div>
+       <div class="row">
+           <div class="col s6" id="vidcol">
+               <video autoplay="true" id="videoElement" class="responsive-video">
+               </video>
+               <canvas></canvas>
+           </div>
+           <div class="col s6" id="textcol">
+               <p class="valign center-align" id="translatedText"></p>
+            </div>
+       </div>
+       <div class="row">
+        <div class="col l6 m12 s12" style="text-align: center;">
+         <button type="button" id="read" onclick="snap('read')" class="waves-effect waves-light btn">Read</button>
+         <button type="button" id="Speak" class="waves-effect waves-light btn">Speak</button>
+         <button type="button" id="clear" class="waves-effect waves-light btn">Clear</button>
+        </div>
+       </div>
+   </div>
+   
+   
+   <div id="modal1" class="modal">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col s6 offset-s3 center">
+                        <span class="formtitle">Sign In</span>
+                        <form class="col s12"  id="loginform">
+                            <input placeholder="Username" type="text" name="user_name" id="user_name" class="validate" />
+                            <input type="password" name="password" id="password" placeholder="Password" class="validate" />
+                            <button class="btn waves-effect waves-light" type="submit">Submit
+  				      <i class="material-icons right">send</i>
+  				     </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <div class="row">
+                     <div class="col s10 offset-s1">
+                             <center><h5 class="registerh5">Register for an account</h5></center>
+                             <form method="post" id="registerform">
+                                 <div class="row">
+                                 <div class="col s2">
+                                 </div>
+                                 <div class="input-field col s4">
+                                     <input id="fname" type="text" name="fname" class="validate">
+                                     <label for="fname">First Name</label>
+                                 </div>
+                                 <div class="input-field col s4">
+                                     <input id="lname" type="text" name="lname" class="validate">
+                                     <label for="lname">Last Name</label>
+                                 </div>
+                                 </div>
+                                 <div class="row">
+                                 <div class="col s2">
+                                 </div>
+                                 <div class="input-field col s8">
+                                     <input id="username" name="username" type="text" class="validate">
+                                     <label for="username">User Name</label>
+                                 </div>
+                                 </div>
+                                 <div class="row">
+                                 <div class="col s2">
+                                 </div>
+                                 <div class="input-field col s8">
+                                     <input id="email" name="email" type="email" class="validate">
+                                     <label for="email" data-error="Error, Not a valid Email">Email</label>
+                                 </div>
+                                 </div>
+                                 <div class="row">
+                                 <div class="col s2">
+                                 </div>
+                                 <div class="input-field col s8">
+                                     <input id="password" name="password" type="password" class="validate">
+                                     <label for="password">Password</label>
+                                 </div>
+                                 </div>
+                                 <div class="row">
+                                 <div class="col s2 offset-s7">
+                                     <button class="btn" name="submit" type="submit">
+  				                            Submit!
+  				                      </button>
+                                 </div>
+                             </form>
+                         </div>
+                     </div>
+               </div>
+            </div>
+        </div>
+
+   
+   </main>
+           <footer class="page-footer  light-blue lighten-4">
+          <div class="container">
+            <div class="row">
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            <a class=" modal-trigger" href="#modal2">©</a> 2016 Copyright VandyHacks Dream Team
+            <a class="teal-text text-darken-4 right" href="https://www.youtube.com/watch?v=mIVwasDgqzM">Promo Vid</a>
+            </div>
+          </div>
+        </footer>
+            
+   <script type="text/javascript" src="https://sdk.clarifai.com/js/clarifai-2.0.14.js"></script>
+          
+<script>
+  var app = new Clarifai.App(
+    'PteynGvFPCcZlopijaRtUOX7I7FKyxtu7DvrFpFo',
+    'VahVy96QIe0ts0BvbbNRn3_a4VkkLOwMiJdlv6ne'
+  );
+  
+</script>
+   
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script src="script.js"></script>
+ </body>
+
+ </html>
+ 
+ 

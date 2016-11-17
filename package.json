@@ -1,0 +1,16 @@
+{
+  "name": "gstr",
+  "version": "1.0.0",
+  "description": "Gstr",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "chart.js": "^2.3.0",
+    "express": "^4.14.0",
+    "express-session": "^1.14.1",
+    "log-timestamp": "^0.1.2",
+    "mongodb": "^2.2.10"
+  },
+  "author": "",
+  "license": "ISC"
+}
